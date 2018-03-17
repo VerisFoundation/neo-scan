@@ -16,11 +16,11 @@ use Mix.Config
 config :neoscan_web, NeoscanWeb.Endpoint,
   http: [port: {:system, "PORT"}, compress: true],
   url: [scheme: "https", host: "scan.verisfoundation.com", port: 443],
-  # force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
   server: true,
   secret_key_base: "J8EWtXVVWp+AmNn4fmdodz17pug1X8v8QbjiPnNf0IkeFYhY140Dhei7UGUACHXs",
-  check_origin: ["https://scan.verisfoundation.io"]
+  check_origin: ["https://scan.verisfoundation.com"]
 
 # ## SSL Support
 #
