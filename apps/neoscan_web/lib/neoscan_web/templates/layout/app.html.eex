@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-	<title>NEOSCAN | <%= get_page(@conn) %></title>
+	<title>Veris Scan | <%= get_page(@conn) %></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="mobile-web-app-capable" content="yes">
@@ -60,7 +60,7 @@
 			<!-- Logo -->
 			<div class="logo-wrapper">
         <a href="/" alt="NEOSCAN Home">
-          <img src="<%= static_path(@conn, "/images/NEOSCAN_Logo.svg") %>" alt="<%= gettext "NEOSCAN Home" %>" title="<%= gettext "NEOSCAN Home" %>" width="163px" height="32px" class="neoscan-logo" />
+          <img src="<%= static_path(@conn, "/images/veris_logo.svg") %>" alt="<%= gettext "VRSSCAN Home" %>" title="<%= gettext "VRSSCAN Home" %>" width="163px" height="32px" class="neoscan-logo" />
         </a>
 			</div>
 
@@ -114,29 +114,10 @@
 		<footer id="footer">
 			<div class="footer-content-wrapper">
 				<div class="left-footer-information">
-					<img src="<%= static_path(@conn, "/images/NEOSCAN_Logo.svg") %>" alt="NEOSCAN Home" title="NEOSCAN Home" class="neoscan-logo-footer" width="136px" height="27px" />
+					<img src="<%= static_path(@conn, "/images/veris_logo.svg") %>" alt="Veris Scan Home" title="Veris Scan Home" class="neoscan-logo-footer" width="136px" height="27px" />
 					<p class="medium-detail-text"><%= gettext "The source code is" %> <a href="http://opensource.org/licenses/mit-license.php" alt="<%= gettext "View MIT License"%>" title="<%= gettext "View MIT License"%>" class="large-blue-link"><%= gettext "licensed" %> MIT</a></li>
 					<p class="medium-detail-text"><%= gettext "The website content is licensed" %> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" alt="CC ANS 4.0" title="CC ANS 4.0" class="large-blue-link">CC ANS 4.0</a></p>
-					<p class="medium-detail-text"><a href="https://neoscan-testnet.io/" alt="<%= gettext "NEOSCAN Testnet"%>" title="<%= gettext "NEOSCAN Testnet"%>" class="large-blue-link"><%= gettext "NEOSCAN Testnet" %></a></p>
 					<p class="medium-detail-text">&copy; 2017 <a href="http://cityofzion.io/" alt="<%= gettext "Visit City of Zion"%>" title="<%= gettext "Visit City of Zion"%>" class="large-blue-link"><%= gettext "City Of Zion" %></a></p>
-				</div>
-
-				<div class="right-footer-information">
-					<div class="footer-link-wrapper">
-						<a href="https://discord.gg/Md676aR" alt="<%= gettext "NEO Discord"%>" title="<%= gettext "NEO Discord"%>" class="coz-discord"><%= gettext "NEO Discord" %></a>
-					</div>
-					<div class="footer-link-wrapper">
-						<a href="https://github.com/CityOfZion" alt="<%= gettext "City of Zion Github" %>" title="<%= gettext "City of Zion Github" %>" class="coz-github"><%= gettext "City of Zion Github" %></a>
-					</div>
-					<div class="footer-link-wrapper">
-						<a href="<%= doc_path(@conn, :index) %>" alt="<%= gettext "NEOSCAN API" %>" title="<%= gettext "NEOSCAN API" %>" class="coz-api"><%= gettext "NEOSCAN API" %></a>
-					</div>
-          <div class="footer-link-wrapper">
-            <div class="btn btn-primary tooltip-btn">
-              <%= if get_tooltips(@conn) == "on" do %><%= gettext "Tooltips On " %><i class="fa fa-eye tooltip-eye" aria-hidden="true"></i><% end %>
-              <%= if get_tooltips(@conn) == "off" do %><%= gettext "Tooltips Off " %><i class="fa fa-eye-slash tooltip-eye" aria-hidden="true"></i><% end %>
-            </div>
-          </div>
 				</div>
 			</div>
 		</footer>

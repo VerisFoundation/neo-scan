@@ -12,8 +12,8 @@ export const formatterTwo = new Intl.NumberFormat('en-US', {
   minimumFractionDigits: 2
 })
 
-export const formatBTC = (num) => num.toFixed(8)
-export const formatBTCLarge = (num) => {
+export const formatBTC = num => num.toFixed(8)
+export const formatBTCLarge = num => {
   let formatStyle
   if (Number(num) > 1000) {
     formatStyle = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 })
@@ -23,7 +23,7 @@ export const formatBTCLarge = (num) => {
   return formatStyle.format(num)
 }
 
-export function getClass (type) {
+export function getClass(type) {
   if (type === 'ContractTransaction') {
     return 'neo-transaction'
   }
@@ -53,12 +53,12 @@ export function getClass (type) {
   }
 }
 
-export function getName (type) {
+export function getName(type) {
   if (type === 'ContractTransaction') {
     return 'Contract'
   }
   if (type === 'ClaimTransaction') {
-    return 'GAS Claim'
+    return 'VRC Claim'
   }
   if (type === 'MinerTransaction') {
     return 'Miner'
@@ -83,7 +83,7 @@ export function getName (type) {
   }
 }
 
-export function getIcon (type) {
+export function getIcon(type) {
   if (type === 'ContractTransaction') {
     return 'fa-cube'
   }

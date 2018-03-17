@@ -12,7 +12,7 @@ defmodule NeoscanWeb.ViewHelper do
 
   def get_GAS_balance(nil) do
     raw(
-      ~s(<p class="medium-detail-text"><span class="fa fa-cubes fa-cubes-small"></span><span class="bold-text">GAS: 0.</span><span class="divisible-amount">0</span></p>)
+      ~s(<p class="medium-detail-text"><span class="fa fa-cubes fa-cubes-small"></span><span class="bold-text">VRC: 0.</span><span class="divisible-amount">0</span></p>)
     )
   end
 
@@ -31,7 +31,7 @@ defmodule NeoscanWeb.ViewHelper do
       |> Integer.parse()
 
     raw(
-      ~s(<p class="medium-detail-text"><span class="fa fa-cubes fa-cubes-small"></span><span class="bold-text">GAS:</span> ) <>
+      ~s(<p class="medium-detail-text"><span class="fa fa-cubes fa-cubes-small"></span><span class="bold-text">VRC:</span> ) <>
         "#{number_to_delimited(int)}" <>
         ~s(<span class="divisible-amount">) <> "#{div}</span></p>"
     )

@@ -83,7 +83,7 @@ msgid "Contract"
 msgstr ""
 
 msgid "Gas Claim"
-msgstr ""
+msgstr "VRC Claim"
 
 msgid "Invocation"
 msgstr ""
@@ -191,7 +191,7 @@ msgid "The website content is licensed"
 msgstr ""
 
 msgid "NEOSCAN API"
-msgstr ""
+msgstr "VRSSCAN API"
 
 msgid "City of Zion Github"
 msgstr ""

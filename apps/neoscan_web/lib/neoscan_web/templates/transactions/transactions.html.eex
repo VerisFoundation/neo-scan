@@ -39,7 +39,7 @@
               <p class="medium-detail-text col-2-width"><span class="fa fa-cube"></span><%= gettext "Contract" %></p>
             <% end %>
             <%= if transaction.type == "ClaimTransaction" do %>
-              <p class="medium-detail-text col-2-width"><span class="fa fa-cubes"></span><%= gettext "Gas Claim" %></p>
+              <p class="medium-detail-text col-2-width"><span class="fa fa-cubes"></span><%= gettext "VRC Claim" %></p>
             <% end %>
             <%= if transaction.type == "InvocationTransaction" do %>
               <p class="medium-detail-text col-2-width"><span class="fa fa-paper-plane"></span><%= gettext "Invocation" %></p>
@@ -136,7 +136,7 @@
               <% end %>
             </div>
             <div class="other-transaction-information">
-              <p><%= gettext "Network Fee"%>: <%=transaction.net_fee%> <%= gettext "GAS" %> &middot; <%= gettext "System Fee" %>: <%=transaction.sys_fee%> <%= gettext "GAS" %> &middot; <%= gettext "Data Size" %>: <%=transaction.size%> bytes</p>
+              <p><%= gettext "Network Fee"%>: <%=transaction.net_fee%> <%= gettext "VRC" %> &middot; <%= gettext "System Fee" %>: <%=transaction.sys_fee%> <%= gettext "VRC" %> &middot; <%= gettext "Data Size" %>: <%=transaction.size%> bytes</p>
             </div>
           </div>
         </div>

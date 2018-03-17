@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="token-amount-wrapper col-2-width">
-            <p class="medium-detail-text add-margin-bottom"><span class="fa fa-cube fa-cube-small"></span><%= gettext "NEO" %>: <%= get_NEO_balance(address.balance) %></p>
+            <p class="medium-detail-text add-margin-bottom"><span class="fa fa-cube fa-cube-small"></span><%= gettext "VRS" %>: <%= get_NEO_balance(address.balance) %></p>
             <%= get_GAS_balance(address.balance) %>
           </div>
         </div>
